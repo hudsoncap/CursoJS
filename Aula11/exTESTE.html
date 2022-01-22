@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Descobrindo Estrangeiros</h1>
+     Você mora em Qual Pais? <input type="text" name="pais" id="paisid">
+     <input type="button" value="confirmar" onclick="DP()">
+     <div id='res'></div>
+     <script>
+         function DP() {
+            var pais = document.getElementById('paisid')
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p>seu Pais <strong>${pais.value.toUpperCase()}</strong></p>`  
+             if (pais.value == 'brasil')   {
+                res.innerHTML += `você é <strong>Brasileiro</strong>`   
+             }  else {
+                 res.innerHTML += 'você é <strong>Estrangeiro</strong>'
+             }
+         }
+     </script>
+</body>
+</html>

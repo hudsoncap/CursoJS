@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+      <style> 
+            body{ background-color: rgb(248, 246, 250);}
+            h1{color:yellow}
+            p{color:rgb(253, 253, 253)}
+            div{color:rgb(189, 145, 15)}          
+    </style>
+<body>
+      <h1>Oi tudo bem</h1>
+      <p>oi tudo bem 2</p>
+      <p>Aprendendo usar <Strong>DOM</Strong> em java script</p>
+      <div id='d1'>Pão de queijo</div>
+      <div id= 'd2'>Olá</div>
+      <div class= 'd3'>'teste drive'</div>
+      <script>
+           var p1 = window.document.getElementsByTagName('p')[1]
+           var dv1 = window.document.getElementById('d1')
+           p1.style.backgroundColor = 'green'
+           /*window.alert(p1.innerText)*/
+           d1.innerText = "vai tudo toma no cu"
+           d1.style.backgroundColor= "red"
+           d2.innerText = "se fude"
+           d2.style.backgroundColor = "white"
+           var dv3 = window.document.querySelector('div.d3')
+           dv3.style.backgroundColor = "yellow"
+           dv3.innerText = 'testando'
+           document.write((dv3.innerText) + '<br/>')
+           document.write(p1.innerText)
+           
+           
+
+        
+        
+          
+      </script>
+</body>
+</html>

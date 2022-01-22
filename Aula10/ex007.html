@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+       <Style>
+           body{
+               font: normal 18pt Arial;   
+               background: rgb(32, 49, 32);           
+           }
+            input{
+                font: normal 18pt Arial;
+                width: 100px;
+            }
+            div{
+                margin-top: 20px;
+               font: normal 25pt Arial;
+               color: rgb(12, 12, 14);               
+            }
+              h1{ color:rgb(233, 236, 236)}
+              div#res{color:aliceblue}
+              div#br{color:aliceblue}
+              div#USD{color:aliceblue}
+              div#EUR{color:aliceblue}
+       </Style>
+</head>
+
+<body>
+    <h1>convertendo valores de moedas</h1>
+    <input type="number" name='txtn1' id='txtn1'> +
+    <input type="number" name='txtn2' id='txtn2'>
+    <input type="button" value='Somar' onclick="somar()" >
+    <div id='res' >  </div>
+    <div id="br"> </div>
+    <div id="USD">  </div>
+    <div id="EUR">  </div>
+    
+    
+    
+    <script>
+       function somar(){
+           var tn1 = window.document.getElementById('txtn1')
+           var tn2 = window.document.getElementById('txtn2')
+           var res = window.document.getElementById('res')
+           var br = window.document.getElementById('br')
+           var USD = window.document.getElementById('USD')
+           var EUR = window.document.getElementById('EUR')
+           var n1 = Number(tn1.value)
+           var n2 = Number(tn2.value)
+           var s = n1 + n2;
+           var dolar 
+           var euro
+            Number(dolar = s / 5.74);
+            Number(euro= s / 6.48);
+           res.innerHTML = `saldo antigo: ${n1} </br> deposito:${n2} </br> total: ${s}`
+           br.innerHTML = `saldo em reais: ${s.toLocaleString('pt-br',{style: 'currency', currency:'BRL'})}`;
+           USD.innerHTML = `saldo em Dollar: ${dolar.toLocaleString('pt-br',{style: 'currency', currency:'USD'})}`;
+           EUR.innerHTML = `saldo em Euros: ${euro.toLocaleString('pt-br',{style: 'currency', currency:'EUR'})}`;
+                     
+       }
+    </script>
+</body>
+</html>

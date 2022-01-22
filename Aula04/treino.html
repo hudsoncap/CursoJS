@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <Style>
+    body{
+        font: normal 18pt Arial;              
+    }
+    </Style>  
+<body>
+     <h1>Banco</h1>
+     <div>seu nome</div>
+     <input type="text" name="nome" id="nome"> </br>
+     <div>saldo antigo + saldo atual </div>
+     <input type="number" name="SA" id="SA"> +
+     <input type="number" name="NS" id="SAMS">
+     <input type="button" value="Concluir" onclick="somar()">
+     <div id="RES">saldo e saldos convertidos</div>
+
+     <script>
+         var ns1 = window.document.getElementById("SA") 
+              var ns2 = window.document.getElementById("SAMS") 
+              var res = window.document.getElementById("RES")
+              var n1 = number(ns1.value)
+              var n2 = number(ns2.value)
+         function somar(){ 
+            var S = n1 + n2
+              res.innerHTML= `a soma de ${n1} e ${n2} é: ${s}`
+         }
+     </script>
+</body>
+</html>

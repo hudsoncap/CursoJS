@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          
+        body {     background-color: rgb(247, 240, 240);
+                   color: rgb(228, 228, 228);
+                   font: normal 25pt Arial;
+                   }
+                   h1 {color:coral}
+                   
+
+    </style>
+</head>
+<body>
+       <h1 id = 'BDH'>Banco do Hudson </h1>
+       <input type="text"  name="nome" id="nome"> </br>
+       <input type="number" name="saldo Atual" id="SA"> +
+       <input type="number" name="salario" id="S">
+       <input type="button" value="Concluir" onclick="resultado">
+       <div id="res"> resultado</div>
+      
+    <script>
+          var RN = window.document.getElementById("nome");
+          var RSA = window.document.getElementById("SA");
+          var RS = window.document.getElementById("S");
+
+          var saldo
+          saldoA = number(RSA.value)
+          sal= number(RS.value)
+          saldo = saldoA + sal;
+          Number(dollar = saldo / 5.65);
+          Number(euro= saldo / 6.39);
+         var n1 = document.write(`Olá, <strong>${nome}</strong>!!! seu nome tem ${nome.length} letras<br/>`)
+         var NM = document.write(`seu nome em maiusculas ${nome.toLocaleUpperCase()} <br/>`);
+         var NMN =  document.write(`seu nome em minusculas ${nome.toLocaleLowerCase()}<br/>`);
+          document.write(`saldo antigo: ${saldoA.toLocaleString('pt-br',{style: 'currency', currency:'BRL'})}<br/> Salario: 
+          ${sal.toLocaleString('pt-br',{style: 'currency', currency:'BRL'})}</br> saldo Atual:
+          ${saldo.toLocaleString('pt-br',{style: 'currency', currency:'BRL'})}<br/>`);
+          document.write(`Saldo em dollar: ${dollar.toLocaleString('pt-br',{style: 'currency', currency: 'USD'})}<br/>`);
+          document.write(`Saldo em Euros: ${euro.toLocaleString('pt-br',{style: 'currency', currency: 'EUR'})}`);
+          var NB = window.document.getElementById('BDH')
+          NB.innerText= `Banco do ${nome}`
+          
+           
+    </script>
+</body>
+</html>
